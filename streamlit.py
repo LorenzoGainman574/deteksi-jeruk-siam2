@@ -12,8 +12,7 @@ st.text("Arahkan jeruk ke dalam kotak di tengah kamera")
 # 2. Inisialisasi Model
 @st.cache_resource
 def load_my_model():
-    # Menggunakan cache agar model tidak dimuat ulang setiap kali script berjalan
-    MODEL_PATH = "final_model.keras"
+    MODEL_PATH = "final_model.keras" # atau "final_model.h5", keduanya akan terbaca di versi 2.15.0
     return tf.keras.models.load_model(MODEL_PATH)
 
 model = load_my_model()
