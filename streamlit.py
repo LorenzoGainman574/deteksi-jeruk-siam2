@@ -13,7 +13,7 @@ st.text("Arahkan jeruk ke dalam kotak di tengah kamera")
 @st.cache_resource
 def load_tflite_model():
     # Sesuaikan path jika file berada di dalam folder, misal: "model/final_model.tflite"
-    MODEL_PATH = "model/final_model.tflite"
+    MODEL_PATH = "final_model.tflite"
     interpreter = tf.lite.Interpreter(model_path=MODEL_PATH)
     interpreter.allocate_tensors()
     return interpreter
