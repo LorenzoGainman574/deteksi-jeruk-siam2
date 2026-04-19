@@ -13,7 +13,7 @@ st.text("Arahkan jeruk ke dalam kotak di tengah kamera")
 @st.cache_resource
 def load_my_model():
     # Menggunakan cache agar model tidak dimuat ulang setiap kali script berjalan
-    MODEL_PATH = "model/final_model.h5"
+    MODEL_PATH = "final_model.keras"
     return tf.keras.models.load_model(MODEL_PATH)
 
 model = load_my_model()
